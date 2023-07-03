@@ -1,0 +1,56 @@
+$desktop-margin: 50px;
+
+$extra-small-margin: 5px;
+$small-margin: 10px;
+$middle-margin: 15px;
+$medium-margin: 20px;
+$large-margin: 30px;
+
+$desktop-breakpoint: 1300px;
+$tablet-breakpoint: 1000px;
+$mobile-breakpoint: 900px;
+$menu-breakpoint: 800px;
+
+@mixin button {
+  background-color: #bc2323;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: $small-margin $medium-margin;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  &:disabled {
+    background-color: #b3b3b3;
+  }
+}
+@mixin h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+@mixin h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+@mixin h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0;
+}
+@mixin h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0;
+}
+@mixin p {
+  font-weight: 400;
+  line-height: 1.7;
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

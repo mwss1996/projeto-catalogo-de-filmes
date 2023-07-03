@@ -1,0 +1,16 @@
+@use "../../global.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: global.$small-margin;
+  label {
+    color: #fff;
+  }
+  input {
+    background-color: #444444;
+    border: 1px solid #979797;
+    padding: global.$small-margin global.$medium-margin;
+    color: #fff;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,11 @@
+@use "../../../global.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: global.$desktop-margin;
+  .registerButton {
+    @include global.button;
+    align-self: flex-start;
+    text-decoration: none;
+  }
+}
